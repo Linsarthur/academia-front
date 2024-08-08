@@ -11,7 +11,8 @@ export default function Header(){
         </Link>
         <div className="d-flex gap-5">
           <Link to="/alunos">Clientes</Link>
-          <Link to="/instrutors">Pets</Link>
+          <Link to="/instrutors">Instrutores</Link>
+          <Link to="/aulas">Aulas</Link>
         </div>
       </nav>
     </header>
