@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate, useParams  } from "react-router-dom";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { updateAulaAula } from "../api/aulas";
+import { updateAula } from "../api/aulas";
 import { getAlunos } from "../api/alunos";
 import { getInstrutors } from "../api/instrutors";
 
