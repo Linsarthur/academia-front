@@ -146,7 +146,7 @@ export default function NovaAula() {
                         <small className="text-danger">Selecione um instrutor!</small>
                     )}
                 </div>
-                <Button className="mt-3" type="submit">
+                <Button variant="info" className="mt-3" type="submit">
                     Marcar
                 </Button>
             </form>

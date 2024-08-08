@@ -11,12 +11,13 @@ import NovoAluno from "./pages/NovoAluno";
 import NovoInstrutor from "./pages/NovoInstrutor";
 import Header from "./components/Header";
 import { Toaster } from "react-hot-toast";
+import Footer from "./components/Footer";
 
 export default function App() {
     return (
         <>
             <BrowserRouter>
-                {/* <Header /> */}
+                <Header />
 
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -33,6 +34,7 @@ export default function App() {
             </BrowserRouter>
             <Toaster position="bottom-right"/>
 
+            <Footer/>
 
 
         </>

@@ -31,7 +31,7 @@ function Instrutores() {
   return (
     <main className="mt-4 container">
       <h1>Instrutores</h1>
-      <Button as={Link} to="/instrutors/novo">
+      <Button variant="info" as={Link} to="/instrutors/novo">
         Adicionar Instrutor
       </Button>
       <hr />
@@ -57,7 +57,7 @@ function Instrutores() {
                   <td>{instrutor.cref}</td>
                   <td>
                     <Button variant="danger" size="sm" onClick={() => deletarInstrutor(instrutor.id)}>Excluir</Button>
-                    <Button size="sm" as={Link} to={`/instrutors/editar/${instrutor.id}`}>Editar</Button>
+                    <Button variant="info" size="sm" as={Link} to={`/instrutors/editar/${instrutor.id}`}>Editar</Button>
                   </td>
                 </tr>
               );

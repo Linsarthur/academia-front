@@ -57,7 +57,7 @@ export default function NovoAluno() {
                     />
                     {errors.dataNasc && (<small className="text-danger">A data de nascimento é inválida!</small>)}
                 </div>
-                <Button className="mt-3" type="submit">Cadastrar</Button>
+                <Button variant="info" className="mt-3" type="submit">Cadastrar</Button>
             </form>
         </main>
     )

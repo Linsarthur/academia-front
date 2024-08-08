@@ -33,7 +33,7 @@ export default function Aula() {
     return (
         <main className="mt-4 container">
             <h1>Aulas</h1>
-            <Button as={Link} to="/aulas/novo">
+            <Button variant="info" as={Link} to="/aulas/novo">
                 Adicionar Aula
             </Button>
             <hr />
@@ -65,7 +65,7 @@ export default function Aula() {
                                         <Button variant="danger me-2" size="sm" onClick={() => deletarAula(aula.id)}>
                                             Excluir
                                         </Button>
-                                        <Button size="sm" as={Link} to={`/aulas/editar/${aula.id}`}>
+                                        <Button variant="info" size="sm" as={Link} to={`/aulas/editar/${aula.id}`}>
                                             Editar
                                         </Button>
                                     </td>

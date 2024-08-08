@@ -31,7 +31,7 @@ export default function Aluno() {
     return (
         <main className="mt-4 container">
             <h1>Alunos</h1>
-            <Button as={Link} to="/alunos/novo">Adicionar Alunos</Button>
+            <Button variant="info" as={Link} to="/alunos/novo">Adicionar Alunos</Button>
             <hr />
             {alunos ? <Table>
                 <thead>
@@ -52,7 +52,7 @@ export default function Aluno() {
                                 <td>{aluno.dataNasc}</td>
                                 <td>
                                     <Button variant="danger" size="sm" onClick={()=> deletarAluno(aluno.id)}>Excluir</Button>
-                                    <Button size="sm" as={Link} to={`/alunos/editar/${aluno.id}`}>Editar</Button>
+                                    <Button variant="info" size="sm" as={Link} to={`/alunos/editar/${aluno.id}`}>Editar</Button>
 
                                 </td>
 

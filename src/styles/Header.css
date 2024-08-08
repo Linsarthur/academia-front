@@ -1,0 +1,11 @@
+.navbar-custom {
+    background-color: #36cde8; /* Cor azul da navbar */
+}
+.navbar-brand img {
+    height: 60px; /* Altura do logo */
+}
+
+.nav-item {
+    font-size: 1.3rem;
+    font-weight: bold;
+}

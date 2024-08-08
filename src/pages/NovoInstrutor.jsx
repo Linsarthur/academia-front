@@ -87,7 +87,7 @@ function NovoInstrutor() {
             <small className="text-danger">O CREF é inválido!</small>
           )}
         </div>
-        <Button className="mt-3" type="submit">
+        <Button variant="info" className="mt-3" type="submit">
           Cadastrar
         </Button>
       </form>
