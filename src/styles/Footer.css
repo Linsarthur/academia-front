@@ -1,11 +1,11 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
 }
 
-/* body{
+body{
     height: 100vh;
-} */
+}
 
 .caixa-footer {
     display: flex;
@@ -16,12 +16,34 @@
     width: 100vw;
     font-size: 1rem;
     font-weight: 700;
-   position: fixed;
-   bottom: 0;
+ 
     
 }
 
 .caixa-footer p {
     margin-bottom: 0;
 }
+ */
 
+ body, html {
+    height: 100vh;
+}
+
+
+
+
+main {
+    flex: 1; 
+    padding: 20px;
+}
+
+.caixa-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36cde8;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+}

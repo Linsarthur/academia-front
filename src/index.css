@@ -10,3 +10,30 @@
   
 }
 
+
+body, html {
+    height: 100vh;
+}
+
+
+
+
+main {
+    height: calc(100vh - 70px - 60px);
+}
+
+.caixa-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #36cde8;
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 700;
+    width: 100%;
+    padding: 0;
+}
+
+.caixa-footer p {
+    margin: 0;
+}

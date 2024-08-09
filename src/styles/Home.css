@@ -5,7 +5,3 @@
     height: calc(100vh - 70px); /* Altura total da viewport menos a altura da navbar */
     text-align: center;
 }
-
-html, body{
-    height: 100vh;
-}
