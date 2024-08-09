@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import "../styles/Header.css";
 
 
@@ -7,7 +7,43 @@ export default function Header() {
   return (
 
     <>
-      <nav class="navbar navbar-expand-lg navbar-custom">
+     <header>
+      <section className="cabecalho">
+      <Link to="/">
+      <img src="/acadefit-logo.png" alt="Logo da academia" width={90}/>
+      </Link>
+      <div className="nav">
+      <ul>
+        <Link className="nav-link" to="/alunos">Alunos</Link>
+        <Link className="nav-link" to="/aulas">Aulas</Link>
+        <Link className="nav-link" to="instrutors">Instrutores</Link>
+      </ul>
+      </div>
+      </section>
+     </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
             <img src="acadefit-logo.png" alt="Logo" />
@@ -29,7 +65,7 @@ export default function Header() {
             </ul>
           </div>
         </div>
-      </nav>
+      </nav> */}
     </>
 
   )

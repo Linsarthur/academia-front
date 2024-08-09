@@ -1,11 +1,31 @@
-.navbar-custom {
-    background-color: #36cde8; /* Cor azul da navbar */
-}
-.navbar-brand img {
-    height: 60px; /* Altura do logo */
+.cabecalho{
+    display: flex;
+    height: 70px;
+    background-color: #32D2F2;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 0 30px;
+    
+    
 }
 
-.nav-item {
-    font-size: 1.3rem;
-    font-weight: bold;
+.cabecalho  img{
+    padding: 10px;
+    
+}
+
+
+.nav ul{
+    display: flex;
+    gap: 100pxs;
+    margin-bottom: 0;
+    padding-left: 0;
+    padding: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+}
+
+.nav ul:hover{
+    color: black;
 }
