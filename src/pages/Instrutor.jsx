@@ -56,7 +56,7 @@ function Instrutores() {
                   <td>{instrutor.cpf}</td>
                   <td>{instrutor.cref}</td>
                   <td>
-                    <Button variant="danger" size="sm" onClick={() => deletarInstrutor(instrutor.id)}>Excluir</Button>
+                    <Button variant="danger me-2" size="sm" onClick={() => deletarInstrutor(instrutor.id)}>Excluir</Button>
                     <Button variant="info" size="sm" as={Link} to={`/instrutors/editar/${instrutor.id}`}>Editar</Button>
                   </td>
                 </tr>

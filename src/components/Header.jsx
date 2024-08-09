@@ -14,9 +14,9 @@ export default function Header() {
       </Link>
       <div className="nav">
       <ul>
-        <Link className="nav-link" to="/alunos">Alunos</Link>
-        <Link className="nav-link" to="/aulas">Aulas</Link>
-        <Link className="nav-link" to="instrutors">Instrutores</Link>
+        <Link className="nav-link text-dark" to="/alunos">Alunos</Link>
+        <Link className="nav-link text-dark" to="instrutors">Instrutores</Link>
+        <Link className="nav-link text-dark" to="/aulas">Aulas</Link>
       </ul>
       </div>
       </section>

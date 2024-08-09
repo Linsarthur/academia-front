@@ -138,7 +138,7 @@ export default function NovaAula() {
                         <option value="">Selecione um instrutor</option>
                         {instrutors && instrutors.map(instrutor => (
                             <option key={instrutor.id} value={instrutor.id}>
-                                {instrutor.nome} - {instrutor.cref}
+                                {instrutor.nome} - {instrutor.especializacao} - {instrutor.cref}
                             </option>
                         ))}
                     </select>

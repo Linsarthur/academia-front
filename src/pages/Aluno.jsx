@@ -51,7 +51,7 @@ export default function Aluno() {
                                 <td>{aluno.cpf}</td>
                                 <td>{aluno.dataNasc}</td>
                                 <td>
-                                    <Button variant="danger" size="sm" onClick={()=> deletarAluno(aluno.id)}>Excluir</Button>
+                                    <Button variant="danger me-2" size="sm" onClick={()=> deletarAluno(aluno.id)}>Excluir</Button>
                                     <Button variant="info" size="sm" as={Link} to={`/alunos/editar/${aluno.id}`}>Editar</Button>
 
                                 </td>
