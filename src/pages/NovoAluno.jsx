@@ -43,6 +43,14 @@ export default function NovoAluno() {
                     {errors.email && (<small className="text-danger">O email é inválido!</small>)}
                 </div>
                 <div>
+                    <label htmlFor="telefone">Telefone</label>
+                    <input type="tel" id="telefone" className="form-control" 
+                    {...register("telefone", {required:true, maxLength: 20})}
+                    />
+                    {errors.telefone && (<small className="text-danger">O telefone é inválido!</small>)}
+                </div>
+
+                <div>
                     <label htmlFor="cpf">Cpf</label>
                     <input type="text" id="cpf" className="form-control"
                         {...register("cpf", { required: true, maxLength: 11 })}

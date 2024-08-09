@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { useNavigate, useParams  } from "react-router-dom";
 import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
-import { updateAula } from "../api/aulas";
+import { getAula, updateAula } from "../api/aulas";
 import { getAlunos } from "../api/alunos";
 import { getInstrutors } from "../api/instrutors";
 
@@ -13,6 +13,7 @@ export default function EditarAula(){
         register,
         handleSubmit,
         formState: { errors },
+        reset,
     } = useForm();
 
     const navigate = useNavigate();
@@ -25,7 +26,7 @@ export default function EditarAula(){
 
     function atualizarAula(data) {
         
-        updateAula(data).then((resposta) => {
+        updateAula(id, data).then((resposta) => {
             toast.success(resposta.message);
             navigate("/aulas");
         }).catch((err) => {
@@ -59,12 +60,12 @@ export default function EditarAula(){
     }
 
     useEffect(() => {
+        carregarInstrutors();
+        carregarAula();
         carregarAlunos();
     }, []);
 
-    useEffect(() => {
-        carregarInstrutors();
-    }, []);
+
 
     return (
         <main className="mt-4 container">

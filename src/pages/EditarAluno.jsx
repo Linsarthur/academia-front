@@ -1,15 +1,17 @@
 import { useForm } from "react-hook-form";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { getAluno, updateAluno } from "../api/alunos";
 import toast from "react-hot-toast";
 import { useEffect } from "react";
+import { Button } from "react-bootstrap";
+
 
 export default function EditarAluno() {
     const { register, handleSubmit, formState: { errors }, reset, } = useForm();
 
     const navigate = useNavigate();
 
-    const {id} = useNavigate();
+    const {id} = useParams();
 
     function atualizarAluno(data){
         updateAluno(id,data).then((resposta)=>{
@@ -36,7 +38,7 @@ export default function EditarAluno() {
         <main className="mt-4 container">
             <h1>Editar Aluno</h1>
             <hr />
-            <form onSubmit={handleSubmit(salvarAluno)}>
+            <form onSubmit={handleSubmit(atualizarAluno)}>
                 <div>
                     <label htmlFor="nome">Nome</label>
                     <input type="text" id="nome" className="form-control"
@@ -50,6 +52,13 @@ export default function EditarAluno() {
                     {...register("email", {required:true, maxLength: 200})}
                     />
                     {errors.email && (<small className="text-danger">O email é inválido!</small>)}
+                </div>
+                <div>
+                    <label htmlFor="telefone">Telefone</label>
+                    <input type="tel" id="telefone" className="form-control" 
+                    {...register("telefone", {required:true, maxLength: 20})}
+                    />
+                    {errors.telefone && (<small className="text-danger">O telefone é inválido!</small>)}
                 </div>
                 <div>
                     <label htmlFor="cpf">Cpf</label>

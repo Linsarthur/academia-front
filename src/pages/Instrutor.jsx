@@ -1,6 +1,6 @@
 import { Button, Table } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import { deleteInstrutor, getInstrutor } from "../api/instrutors";
+import { deleteInstrutor, getInstrutor, getInstrutors } from "../api/instrutors";
 import { useEffect, useState } from "react";
 import Loader from "../components/Loader";
 import toast from "react-hot-toast";
@@ -9,7 +9,7 @@ function Instrutores() {
   const [instrutores, setInstrutores] = useState(null);
 
   function carregarInstrutores() {
-    getInstrutor().then((dados) => {
+    getInstrutors().then((dados) => {
       setInstrutores(dados);
     });
   }
